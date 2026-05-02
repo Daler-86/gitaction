@@ -1,0 +1,12 @@
+name: Tenth_workflow
+
+on: [push] 
+ 
+jobs:
+  run-tenth-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Our Vars and Secret
+        run: |
+         echo "${{vars.Status}}"
+         echo "${{vars.PASSWORD}}"
