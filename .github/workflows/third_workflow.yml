@@ -8,8 +8,8 @@ jobs:
     steps:
       - name: Display text
         run: echo "Some Text"
-      - name: Command in line
-        run: |
-          pwd
-          ls -a
-  
+      - name: List Files
+        run: ls -a
+      - users: actions/checkout@v4
+      - name: List Files
+        run: ls -a
