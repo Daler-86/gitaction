@@ -1,4 +1,4 @@
-name: frist_workflow
+name: first_workflow
 
 on: [push]
 
@@ -8,3 +8,4 @@ jobs:
     steps:
       - name: Display text
         run: echo "Some Text"
+        
