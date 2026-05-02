@@ -1,4 +1,4 @@
-name: frist_workflow
+name: first_workflow
 
 on: [push]
 
