@@ -1,0 +1,19 @@
+name: sixth_workflow
+
+#on: [push, issues, pull_request]
+on:
+  push: 
+    branches:
+      - main
+    #tags: 
+     # - "v1.*" #v1.1 v1.1.2
+     # - "!v1.2.1"
+
+jobs:
+  run-first-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Event Vars
+        run: |
+          echo $GITHUB_SHA
+          echo $GITHUB_REF
