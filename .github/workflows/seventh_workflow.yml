@@ -1,8 +1,8 @@
-name: sixth_workflow
+name: seventh_workflow
 
 on:
   schedule:
-    - cron: "*/2 * * * *"
+    - cron: "*/5 * * * *"
 
 
 jobs:
