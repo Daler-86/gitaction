@@ -1,0 +1,9 @@
+name: frist_ workflow
+on: [push]
+
+jobs:
+  run-first-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display text
+        run: echo "Some Text"
