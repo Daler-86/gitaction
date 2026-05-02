@@ -18,4 +18,6 @@ jobs:
   run-second-command:
     runs-on: macos-latest
     needs: [run-first-command]
-    steps:  - name: display Node Version MAC
+    steps:  
+      - name: display Node Version MAC
+        run: node -v
