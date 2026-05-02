@@ -1,7 +1,13 @@
 name: eigth_workflow
 
 on:
-  workflow_dispatch
+  workflow_dispatch:
+    inputs:
+      titleCustom:
+        description: Type The Title
+        type: string
+        required: true
+        default: "Hello World"
 
 
 jobs:
