@@ -5,6 +5,7 @@ on: [push]
 jobs:
   run-tenth-command:
     runs-on: ubuntu-latest
+    environment: "prod"
     steps:
       - name: Our Vars and Secret
         run: |
