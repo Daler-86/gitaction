@@ -1,4 +1,5 @@
-name: frist_ workflow
+name: frist_workflow
+
 on: [push]
 
 jobs:
