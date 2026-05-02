@@ -7,7 +7,7 @@ on:
       - completed
 
 jobs:
-  run-first-command:
+  success-command:
     runs-on: ubuntu-latest
     steps:
       - name: List Files
