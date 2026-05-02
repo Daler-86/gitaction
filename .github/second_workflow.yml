@@ -1,0 +1,21 @@
+name: second_workflow
+
+on: [push]
+
+jobs:
+  run-first-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display text
+        run: echo "Some Text"
+      - name: Command in line
+        run: node -v
+  run-parallel-command:
+    runs-on: windows-latest
+    steps:
+      - name: Display node version WINdows
+        run: npm -v 
+  run-second-command:
+    runs-on: macos-latest
+    needs: [run-first-command]
+    steps:  - name: display Node Version MAC
